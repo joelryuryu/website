@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body bgcolor="#58D68D">
+	<div class="topnav">
+		<a style = "float: left;" href="index.html">Home</a>
+	  <a style = "float: left;" href="forFun.html">For Fun</a>
+	  <a style = "float: left;" href="contact.html">Contact</a>
+	  <a style = "float: left;" href="experience.html">Experience</a>
+	  <a style = "float: left;" href="about.html">About</a>
+	  <a style = "float: right;" href ="resume.png"> Resume</a>
+	</div>
+<TITLE>Joel's Website</TITLE>
+<center>
+	<h1></h1>
+	<h2>
+		<script type="text/javascript">
+		var greeting;
+		var time = new Date().getHours();
+		if (time < 10) {
+			greeting = "Good morning!";
+		} else if (time < 20) {
+			greeting = "Good afternoon!";
+		} else {
+			greeting = "Good evening!";
+		}
+		document.write(greeting)
+		</script>
+	My name is Joel, and I am a cs major from ucsc. This is a personal project of mine.</h2>
+	<script type="text/javascript">
+	var mydate= new Date()
+	var theyear=mydate.getFullYear()
+	var themonth=mydate.getMonth()+1
+	var thetoday=mydate.getDate()
+	document.write("Today's date is: ")
+	document.write(themonth+"/"+thetoday+"/"+theyear)
+	</script>
+	<script type="text/javascript">
+	var time, h, m, s, track;
+    	track = 0;
+        window.onload = function() { setInterval( timeNow, 100); }
+
+        function timeNow() {
+
+        	time = new Date();
+            h = time.getHours();
+            m = time.getMinutes();
+            s = time.getSeconds();
+            if ( s < 10 ) { s = "0" + s; } 
+            if (h>12) {h = h-12}
+            document.getElementById("time").innerHTML = h + ':' + m + ':' + s;
+    	}
+	</script>
+	<br />
+
+	<p>The current time is: <span id="time">~Waiting for time update.</span><br>
+
+	<script>
+	var dt = new Date();
+	document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+	</script>
+	
+</center>
+<br />
+<style type="text/css">
+wFontSize {
+	font-size: 20px;
+}
+</style>
+<br>
+</html>
